@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Musical</string>
+    <string name="melody">Melody</string>
+    <string name="rock">Rock</string>
+    <string name="hip_hop">Hip Hop</string>
+    <string name="play_icon">Play Icon</string>
+    <string name="song_image">Song Image</string>
+    <string name="rock_music">Rock Music</string>
+    <string name="melody_music">Melody Music</string>
+    <string name="hiphop_music">HipHop Music</string>
+    <string name="play_txt">Play</string>
+    <string name="pause_txt">Pause</string>
+    <string name="artist_txt">Artist</string>
+    <string name="title_txt">Title</string>
+    <string name="genre_txt">Genre</string>
+    <string name="album_txt">Album</string>
+    <string name="duration_txt">Duration</string>
+    <string name="tag_line">enjoy your time</string>
+</resources>

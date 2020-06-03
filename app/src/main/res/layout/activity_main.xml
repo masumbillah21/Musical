@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header_bg">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/musical_logo"
+                    android:contentDescription="@string/app_name" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:fontFamily="monospace"
+                        android:gravity="bottom"
+                        android:text="@string/app_name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:textColor="@android:color/white"
+                        android:textStyle="italic"
+                        android:fontFamily="sans-serif-light"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="@string/tag_line"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/melody_card"
+            style="@style/card_style">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/melody_music"
+                    android:contentDescription="@string/melody_music"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aguafina_script"
+                    android:textSize="50sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/melody_music"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rock_card"
+            style="@style/card_style">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rock_music"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/rock_music"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aguafina_script"
+                    android:textSize="50sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/rock_music"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hip_hop_card"
+            style="@style/card_style">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hiphop_music"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/hiphop_music" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/aguafina_script"
+                    android:textSize="50sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/hiphop_music"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
